@@ -6,7 +6,8 @@ import androidx.room.PrimaryKey
 
 @Entity(tableName = "book")
 data class BookData(
-    @PrimaryKey val id : Int,
+    @PrimaryKey
+    val id: Int,
 
     @ColumnInfo(name="type")
     val type: Int,
@@ -20,27 +21,30 @@ data class BookData(
     @ColumnInfo(name="nameEng")
     val nameEng: String,
 
-    @ColumnInfo(name="status")
+    @ColumnInfo(name = "status")
     val status: String,
 
-    @ColumnInfo(name="propagation")
+    @ColumnInfo(name = "propagation")
     val propagation: String,
 
-    @ColumnInfo(name="habitat")
+    @ColumnInfo(name = "habitat")
     val habitat: String,
 
-    @ColumnInfo(name="quantity")
+    @ColumnInfo(name = "quantity")
     val quantity: String,
 
-    @ColumnInfo(name="lifestyle")
+    @ColumnInfo(name = "lifestyle")
     val lifestyle: String,
 
-    @ColumnInfo(name="limitingFactors")
+    @ColumnInfo(name = "limitingFactors")
     val limitingFactors: String,
 
-    @ColumnInfo(name="breeding")
+    @ColumnInfo(name = "breeding")
     val breeding: String,
 
-    @ColumnInfo(name="security")
-    val security: String
+    @ColumnInfo(name = "security")
+    val security: String,
+
+    @ColumnInfo(name = "isFavorite")
+    var isFavorite: Int? = 0
 )

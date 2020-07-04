@@ -8,7 +8,7 @@ import com.example.redbook.data.dao.BookDao
 import com.example.redbook.data.model.BookData
 
 
-@Database(entities = [BookData::class], version = 1)
+@Database(entities = [BookData::class], version = 3)
 
 abstract class BookDatabase : RoomDatabase() {
 
